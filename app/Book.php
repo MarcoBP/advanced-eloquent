@@ -11,7 +11,7 @@ class Book extends Model
 
     // Relacion belogsTo
     
-    public function Category(){
+    public function category(){
     	return $this->belogsTo(Category::class);
     }
 }
