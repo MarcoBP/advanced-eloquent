@@ -254,7 +254,9 @@ class ComposerStaticInitea7329586f997248f633a47d24e34f52
 
     public static $classMap = array (
         'BookTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BookTableSeeder.php',
+        'BookUserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BookUserTableSeeder.php',
         'CategoryTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoryTableSeeder.php',
+        'CreateBookUserTable' => __DIR__ . '/../..' . '/database/migrations/2017_09_22_011428_create_book_user_table.php',
         'CreateBooksTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_26_101805_create_books_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_26_021141_create_categories_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

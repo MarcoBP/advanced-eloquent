@@ -11,12 +11,17 @@
 |
 */
 
-Route::get('/', function() {
-	$categories = AdvancedELOQUENT\Category::whereHas('books', function ($query) {
-	    $query->where('status', 'public');
-	})->get();
-	return view('relationship', compact('categories'));
+Route::get('/', function () {
+	$users = AdvancedELOQUENT\User::all();
+    return view('manytomany', compact('users'));
 });
+
+//Route::get('/', function() {
+//	$categories = AdvancedELOQUENT\Category::whereHas('books', function ($query) {
+//	    $query->where('status', 'public');
+//	})->get();
+//	return view('relationship', compact('categories'));
+//});
 
 //Route::get('/', function() {
 //	$categories = AdvancedELOQUENT\Category::has('books')->get();
