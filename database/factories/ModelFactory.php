@@ -25,5 +25,6 @@ $factory->define(AdvancedELOQUENT\Book::class, function (Faker\Generator $faker)
 		'title' => $faker->name,
 		'description' => $faker->text,
         'category_id' => $faker->randomElement([1,2,3]),
+        'status' => $faker->randomElement(['public', 'draft']),
 	];
 });
